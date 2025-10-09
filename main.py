@@ -1,5 +1,6 @@
 #main function
 import sys
+import question.easy_questions.Roman_Integer_Problem as Roman
 
 
 def main():
@@ -14,7 +15,9 @@ def main():
                     choice = int(input("Enter your choice:\n"))
                     match choice:
                         case 1:
-                            print("Roman Integer Problem")
+                            print("Roman Integer Problem\n")
+                            Roman.question() #will print out the requirements for the Roman Int problem
+                            input('Please press enter to continue')
                         case 2:
                             print("Largest Common Prefix Problem")
                         case _:
