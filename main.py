@@ -10,9 +10,25 @@ def main():
 
             match choice:
                 case 1:
-                    print("Easy")
+                    print("What question do you want to see?\n1.Roman Integer\n2.Largest Common Prefix")
+                    choice = int(input("Enter your choice:\n"))
+                    match choice:
+                        case 1:
+                            print("Roman Integer Problem")
+                        case 2:
+                            print("Largest Common Prefix Problem")
+                        case _:
+                            print("Invalid Choice")
                 case 2:
-                    print("Medium")
+                    print("What question do you want to see?\n1.Add 2 Numbers\n2.Longest Substring without Reacting Characters")
+                    choice = int(input("Enter your choice:\n"))
+                    match choice:
+                        case 1:
+                            print("Add 2 Numbers problem")
+                        case 2:
+                            print("Longest Substring without Reacting Characters Problem")
+                        case _:
+                            print("Invalid Choice")
                 case 3:
                     print("Hard")
                 case _:
