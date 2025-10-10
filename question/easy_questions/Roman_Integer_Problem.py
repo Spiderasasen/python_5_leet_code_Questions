@@ -96,6 +96,7 @@ class Solution(object):
         return count
 
 def solutions():
+    print("My Solutions that the code works\n")
     num1 = Solution().romanToInt('I') #number 1
     num2 = Solution().romanToInt('III') #number 3
     num3 = Solution().romanToInt('IV') # number 4, will continue looping, so we need to have a check that it did count 4
@@ -110,4 +111,5 @@ def solutions():
     print(f'Num7: {num7}, Num8: {num8}, Num9: {num9}')
 
 def read_code():
+    print("My Code:\n")
     read.read_text_file('Code_Text_files/Roman_int.txt')

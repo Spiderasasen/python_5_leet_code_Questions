@@ -15,9 +15,13 @@ def main():
                     choice = int(input("Enter your choice:\n"))
                     match choice:
                         case 1:
-                            print("Roman Integer Problem\n")
+                            print("Roman Integer Problem:\n")
                             Roman.question() #will print out the requirements for the Roman Int problem
-                            input('Please press enter to continue')
+                            input("Press enter to continue...\n")
+                            Roman.read_code() #will read out the code that i wrote
+                            input("Press enter to continue...\n")
+                            Roman.solutions() #showing the code works
+                            input("Press enter to continue...\n")
                         case 2:
                             print("Largest Common Prefix Problem")
                         case _:
