@@ -1,11 +1,3 @@
-import Reading_text_files as read
-
-#showing the player the requirements for the code
-def question():
-    read.read_text_file('Text_Files_for_Questions/Roman_int.txt')
-
-class Solution(object):
-    #TODO make this shit possible
     def romanToInt(self, s):
         #the value in int
         count = 0
@@ -94,20 +86,3 @@ class Solution(object):
 
         #returns the final count
         return count
-
-def solutions():
-    num1 = Solution().romanToInt('I') #number 1
-    num2 = Solution().romanToInt('III') #number 3
-    num3 = Solution().romanToInt('IV') # number 4, will continue looping, so we need to have a check that it did count 4
-    print(f'Num1: {num1}, Num2: {num2}, Num3: {num3}')
-    num4 = Solution().romanToInt('XXII') #22
-    num5 = Solution().romanToInt('XLV') #45
-    num6 = Solution().romanToInt('XCII') #92
-    print(f'Num4: {num4}, Num5: {num5}, Num6: {num6}')
-    num7 = Solution().romanToInt('MCMXCIV') #1994
-    num8 = Solution().romanToInt('MMIV') #2004
-    num9 = Solution().romanToInt('MDCCLXXVI') #1776
-    print(f'Num7: {num7}, Num8: {num8}, Num9: {num9}')
-
-def read_code():
-    read.read_text_file('Code_Text_files/Roman_int.txt')
