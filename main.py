@@ -1,11 +1,12 @@
 #main function
 import sys
 import question.easy_questions.Roman_Integer_Problem as Roman
+import question.easy_questions.Common_letters_in_Array as Common
 
 
 def main():
     while True:
-        print("What question do you like to see?\n1.Easy\n2.Medium\n3.Hard")
+        print("What question do you like to see?\n1.Easy\n2.Medium\n3.Hard\n4.Exit")
         try:
             choice = int(input("Enter your choice:\n"))
 
@@ -23,7 +24,13 @@ def main():
                             Roman.solutions() #showing the code works
                             input("Press enter to continue...\n")
                         case 2:
-                            print("Largest Common Prefix Problem")
+                            print("Largest Common Prefix Problem\n")
+                            Common.reading_question() #reads the question
+                            input("Press enter to continue...\n")
+                            Common.reading_code() #reads the code i wrote
+                            input("Press enter to continue...\n")
+                            Common.solutions()  #showing the code works
+                            input("Press enter to continue...\n")
                         case _:
                             print("Invalid Choice")
                 case 2:
@@ -38,6 +45,8 @@ def main():
                             print("Invalid Choice")
                 case 3:
                     print("Hard")
+                case 4:
+                    sys.exit()
                 case _:
                     print("Please enter a valid choice from 1 - 3")
         except ValueError: #user inputted the wrong number
