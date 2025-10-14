@@ -1,7 +1,6 @@
     def romanToInt(self, s):
         #the value in int
         count = 0
-
         #booleans that will count if it was counted as a speical case
         was_4 = False
         was_9 = False
@@ -9,7 +8,6 @@
         was_90 = False
         was_400 = False
         was_900 = False
-
         #simple loop though the numbers
         for i in range(len(s)):
             match s[i]:
@@ -83,6 +81,5 @@
                         continue
                     else:
                         count += 1000
-
         #returns the final count
         return count

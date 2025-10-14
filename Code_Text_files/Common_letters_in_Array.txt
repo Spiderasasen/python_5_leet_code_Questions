@@ -5,25 +5,18 @@ import Reading_text_files as read
 def reading_question():
     read.read_text_file("Text_Files_for_Questions/Common_letters_in_iteam.txt")
 
-
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:
         final_strings = ""
-
         if len(strs) == 1:
             return strs[0]
-
         for i in range(len(strs[0])):
             char = strs[0][i] #character that will check though all other words
-
             for strn in strs[1:]:  # Hint: Use a slice to skip the first word
                 if i == len(strn) or strn[i] != char:
                     return final_strings
-
             final_strings += char
-
         return final_strings
-
 
 
 def solutions():
@@ -32,6 +25,3 @@ def solutions():
     print(Solution().longestCommonPrefix(["crackers", "cookies", "css"]))
     print(Solution().longestCommonPrefix(["a"]))
     print(Solution().longestCommonPrefix(["flower","flower","flower","flower"]))
-
-def reading_code():
-    read.read_text_file("Code_Text_files/Common_letters_in_Array.txt")
