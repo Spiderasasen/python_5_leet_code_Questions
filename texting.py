@@ -1,4 +1,4 @@
-import question.easy_questions.Common_letters_in_Array as Common
+from question.medium_question import add_2_numbers as adding
 
 def main():
     # Roman.question()
@@ -6,7 +6,9 @@ def main():
     # Roman.read_code()
     # Common.reading_question()
     # Common.solutions()
-    Common.reading_code()
+    #Common.reading_code()
+    adding.read_question()
+    pass
 
 if __name__ == '__main__':
     main()
