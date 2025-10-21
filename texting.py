@@ -8,7 +8,8 @@ def main():
     # Common.solutions()
     #Common.reading_code()
     # Palindromic.read_question()
-    Palindromic.solutions()
+    # Palindromic.solutions()
+    Palindromic.reading_code()
     pass
 
 if __name__ == '__main__':

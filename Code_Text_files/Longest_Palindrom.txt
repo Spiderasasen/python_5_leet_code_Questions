@@ -1,3 +1,5 @@
+from typing import Optional
+
 import Reading_text_files as reading
 
 def read_question() -> None:
@@ -41,6 +43,3 @@ def solutions() -> None:
     print(Solution().longestPalindrome('texas'))
     print(Solution().longestPalindrome('alaska'))
     print(Solution().longestPalindrome('Alaska'))
-
-def reading_code() -> None:
-    reading.read_text_file('Code_Text_files/Longest_Palindrom.txt')
