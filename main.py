@@ -2,6 +2,7 @@
 import sys
 import question.easy_questions.Roman_Integer_Problem as Roman
 import question.easy_questions.Common_letters_in_Array as Common
+import question.medium_question.Longest_Palindromic_Substring as Palindromic
 
 
 def main():
@@ -34,11 +35,17 @@ def main():
                         case _:
                             print("Invalid Choice")
                 case 2:
-                    print("What question do you want to see?\n1.Add 2 Numbers\n2.Longest Substring without Reacting Characters")
+                    print("What question do you want to see?\n1.Longest Palindrome in Substring\n2.Longest Substring without Reacting Characters")
                     choice = int(input("Enter your choice:\n"))
                     match choice:
                         case 1:
-                            print("Add 2 Numbers problem")
+                            print("Longest Palindrome in Substring problem")
+                            Palindromic.read_question() #reads the question
+                            input("Press enter to continue...\n")
+                            Palindromic.reading_code()#reading the code i have on the area
+                            input("Press enter to continue...\n")
+                            Palindromic.solutions() #the solutions from my code
+                            input("Press enter to continue...\n")
                         case 2:
                             print("Longest Substring without Reacting Characters Problem")
                         case _:
