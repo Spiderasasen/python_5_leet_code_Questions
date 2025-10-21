@@ -1,7 +1,14 @@
 import Reading_text_files as reading
 
-def read_question() -> None:
-    reading.read_text_file('Text_Files_for_Questions/add_2_numbers.txt')
+class Longest_Palindrome:
+    def question(self):
+        reading.read_text_file('Text_Files_for_Questions/add_2_numbers.txt')
+
+    def code(self):
+        reading.read_text_file('Code_Text_files/Longest_Palindrom.txt')
+
+    def solution(self) -> None:
+        solutions()
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -41,6 +48,3 @@ def solutions() -> None:
     print(Solution().longestPalindrome('texas'))
     print(Solution().longestPalindrome('alaska'))
     print(Solution().longestPalindrome('Alaska'))
-
-def reading_code() -> None:
-    reading.read_text_file('Code_Text_files/Longest_Palindrom.txt')

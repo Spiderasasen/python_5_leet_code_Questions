@@ -2,9 +2,15 @@ from operator import indexOf, contains
 
 import Reading_text_files as read
 
-def reading_question():
-    read.read_text_file("Text_Files_for_Questions/Common_letters_in_iteam.txt")
+class Common_letters():
+    def question(self):
+        read.read_text_file("Text_Files_for_Questions/Common_letters_in_iteam.txt")
 
+    def code(self):
+        read.read_text_file("Code_Text_files/Common_letters_in_Array.txt")
+
+    def solution(self):
+        solutions()
 
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:
@@ -32,6 +38,3 @@ def solutions():
     print(Solution().longestCommonPrefix(["crackers", "cookies", "css"]))
     print(Solution().longestCommonPrefix(["a"]))
     print(Solution().longestCommonPrefix(["flower","flower","flower","flower"]))
-
-def reading_code():
-    read.read_text_file("Code_Text_files/Common_letters_in_Array.txt")

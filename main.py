@@ -2,8 +2,8 @@
 import sys
 import printing_problems as pr
 from question.easy_questions.Roman_Integer_Problem import Roman_Integer as Roman
-import question.easy_questions.Common_letters_in_Array as Common
-import question.medium_question.Longest_Palindromic_Substring as Palindromic
+from question.easy_questions.Common_letters_in_Array import Common_letters as Common
+from question.medium_question.Longest_Palindromic_Substring import Longest_Palindrome as Palindromic
 
 def main():
     while True:
@@ -20,13 +20,8 @@ def main():
                             roman = Roman()
                             pr.printing_display(roman)
                         case 2:
-                            print("Largest Common Prefix Problem\n")
-                            Common.reading_question() #reads the question
-                            input("Press enter to continue...\n")
-                            Common.reading_code() #reads the code i wrote
-                            input("Press enter to continue...\n")
-                            Common.solutions()  #showing the code works
-                            input("Press enter to continue...\n")
+                            common = Common()
+                            pr.printing_display(common)
                         case _:
                             print("Invalid Choice")
                 case 2:
@@ -34,13 +29,8 @@ def main():
                     choice = int(input("Enter your choice:\n"))
                     match choice:
                         case 1:
-                            print("Longest Palindrome in Substring problem")
-                            Palindromic.read_question() #reads the question
-                            input("Press enter to continue...\n")
-                            Palindromic.reading_code()#reading the code i have on the area
-                            input("Press enter to continue...\n")
-                            Palindromic.solutions() #the solutions from my code
-                            input("Press enter to continue...\n")
+                            long_palindrome = Palindromic()
+                            pr.printing_display(long_palindrome)
                         case 2:
                             print("Longest Substring without Reacting Characters Problem")
                         case _:
