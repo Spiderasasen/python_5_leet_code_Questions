@@ -4,6 +4,16 @@ import question.easy_questions.Roman_Integer_Problem as Roman
 import question.easy_questions.Common_letters_in_Array as Common
 import question.medium_question.Longest_Palindromic_Substring as Palindromic
 
+def printint_display(obj):
+    print(f'{obj.__name__} Problem')
+    input("Press enter to continue...\n")
+    obj.question()
+    input("Press enter to continue...\n")
+    obj.code()
+    input("Press enter to continue...\n")
+    obj.solution()
+    input("Press enter to continue...\n")
+
 
 def main():
     while True:
