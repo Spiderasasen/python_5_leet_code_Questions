@@ -46,11 +46,8 @@ There are 2 questions that are categorized as easy difficulty in leet code that 
 Here are going to be 2 questions that are ranked as Medium Difficulty in Leet Code
 
 [//]: # (Add 2 Numbers)
-1. Add 2 Numbers
-   1. You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
-
-        You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
+1. Longest Palindromic Substring
+   1. Given a string s, return the longest palindromic substring in s.
 [//]: # (Longest Substring without Reapting Characthers)
 2. Longest Substring without Reacting Characters
    1. Given a string s, find the length of the longest substring without duplicate characters.

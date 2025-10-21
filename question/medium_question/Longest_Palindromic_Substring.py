@@ -13,8 +13,15 @@ class ListNode:
 
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        pass
+    def longestPalindrome(self, s: str) -> str:
+        repeating_words = ''
+
+
+
+        return repeating_words
+
 
 def solutions() -> None:
-    print('List go here')
+    print(Solution().longestPalindrome('babad'))
+    print(Solution().longestPalindrome('cbba'))
+    print(Solution().longestPalindrome('cba'))

@@ -1,4 +1,4 @@
-from question.medium_question import add_2_numbers as adding
+from question.medium_question import Longest_Palindromic_Substring as Palindromic
 
 def main():
     # Roman.question()
@@ -7,7 +7,8 @@ def main():
     # Common.reading_question()
     # Common.solutions()
     #Common.reading_code()
-    adding.read_question()
+    # Palindromic.read_question()
+    Palindromic.solutions()
     pass
 
 if __name__ == '__main__':
